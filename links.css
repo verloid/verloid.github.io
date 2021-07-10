@@ -1,0 +1,44 @@
+body {
+  font-family: Helvetica,Lucida,sans-serif;
+  color: #000000;
+  background-color: #ffffff;
+  line-height: 1.3;
+}
+
+a:link {
+  color: #284C82;
+}
+a:visited {
+ color: #777777;
+}
+a:active {
+  color: #336699;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  grid-gap: 1rem;
+  width: auto;
+}
+
+@media only screen and (min-width: 1280px) {
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto;
+  grid-gap: 1rem;
+  max-width: 1280px;
+  margin: auto; }
+
+}
+
+.grid-body {
+  padding: 10px;
+  border: 1px solid #999;
+  border-radius: 5px;
+}
+
+header {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
